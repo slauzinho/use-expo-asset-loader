@@ -49,10 +49,10 @@ const fonts = {
 };
 
 export default function App() {
-  const resourceLoader = useAssetLoader({ images, fonts });
+  const assetLoader = useExpoAssetLoader({ images, fonts });
 
-  if (!resourceLoader.isReady) {
-    return <AppLoading {...resourceLoader.getAppLoadingProps()} />;
+  if (!assetLoader.isReady) {
+    return <AppLoading {...assetLoader.getAppLoadingProps()} />;
   }
 
   return (
