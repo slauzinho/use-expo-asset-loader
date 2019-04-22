@@ -1,0 +1,73 @@
+{
+  "version": "0.0.0-semantically-released",
+  "name": "@kevinwolf/use-expo-asset-loader",
+  "author": "Kevin Wolf <hi@kevinwolf.me>",
+  "description": "React Hook to load and cache assets when using Expo",
+  "license": "MIT",
+  "homepage": "https://github.com/kevinwolfcr/use-expo-asset-loader#readme",
+  "repository": "https://github.com/kevinwolfcr/use-expo-asset-loader",
+  "bugs": "https://github.com/kevinwolfcr/use-expo-asset-loader/issues",
+  "main": "./lib/use-expo-asset-loader.js",
+  "types": "./lib/use-expo-asset-loader.d.ts",
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore",
+    "test": "exit 0 && jest",
+    "prebuild": "rm -rf ./lib",
+    "build": "tsc",
+    "validate": "yarn lint && yarn test --silent --coverage && yarn build",
+    "setup": "yarn install && yarn validate"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "expo": "*",
+    "react": ">=16.8",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/expo": "^32.0.11",
+    "@types/react": "^16.8.14",
+    "@types/react-native": "^0.57.47",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "codecov": "^3.3.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-import-resolver-typescript": "^1.1.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "expo": "^32.0.6",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0",
+    "react": "^16.8.6",
+    "react-native": "^0.59.5",
+    "typescript": "^3.4.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.md": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
