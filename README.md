@@ -1,4 +1,5 @@
 [![PRs Welcome][prs-badge]][prs]
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-blue.svg?style=flat-square)](#contributors)
 [![Build Status][build-badge]][build]
 [![MIT License][license-badge]][license]
@@ -89,6 +90,11 @@ export default function App() {
 
 ## Contributors
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="https://kevinwolf.me"><img src="https://avatars2.githubusercontent.com/u/3157426?v=4" width="100px;" alt="Kevin Wolf"/><br /><sub><b>Kevin Wolf</b></sub></a><br /><a href="https://github.com/kevinwolfcr/use-expo-asset-loader/commits?author=kevinwolfcr" title="Code">💻</a> <a href="https://github.com/kevinwolfcr/use-expo-asset-loader/commits?author=kevinwolfcr" title="Documentation">📖</a> <a href="#infra-kevinwolfcr" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
