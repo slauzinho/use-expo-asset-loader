@@ -1,6 +1,5 @@
 [![PRs Welcome][prs-badge]][prs]
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-blue.svg?style=flat-square)](#contributors)
 [![Build Status][build-badge]][build]
 [![MIT License][license-badge]][license]
 
