@@ -23,13 +23,14 @@
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore",
     "test": "exit 0 && jest",
     "prebuild": "rm -rf ./lib",
-    "build": "tsc",
+    "build": "tsc --skipLibCheck",
     "validate": "yarn lint && yarn test --silent --coverage && yarn build",
     "setup": "yarn install && yarn validate"
   },
-  "dependencies": {},
   "peerDependencies": {
     "expo": "*",
+    "expo-font": "*",
+    "expo-asset": "*",
     "react": ">=16.8",
     "react-native": "*"
   },

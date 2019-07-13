@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Image } from 'react-native'
-import { SplashScreen, Font, Asset } from 'expo'
+import { SplashScreen } from 'expo'
+import { Asset } from 'expo-asset'
+import * as Font from 'expo-font'
 
 import {
   ImageResource,
